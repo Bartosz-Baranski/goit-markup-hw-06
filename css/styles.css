@@ -600,6 +600,10 @@ ul {
 }
 .modal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
   position: fixed;
   width: 528px;
   height: 581px;
@@ -758,4 +762,93 @@ ul {
 }
 .btn-newsletter:hover {
   cursor: pointer;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0px;
+  gap: 10px;
+}
+.form-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 40px; */
+}
+.title-modal {
+  display: block;
+  width: 448px;
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 20px;
+  line-height: 1.172;
+  font-weight: 700;
+}
+.label-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--main-font);
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 1.172;
+  color: var(--signatures);
+  position: relative;
+}
+.input-modal {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 448px;
+  height: 40px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.text-modal {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  max-width: 448px;
+  max-height: 120px;
+  resize: none;
+  font-family: var(--main-font);
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.text-modal::placeholder {
+  font-family: var(--main-font);
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 1.172;
+  color: rgba(117, 117, 117, 0.5);
+  padding-left: 10px;
+  padding-top: 14px;
+}
+.checkbox {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--signatures);
+  margin-top: 20px;
+}
+.link-modal {
+  color: var(--link-focus);
+}
+.btn-modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--link-focus);
+  border: 0px;
+  border-radius: 4px;
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  color: var(--logo-footer);
 }
