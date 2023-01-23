@@ -721,6 +721,12 @@ ul {
   margin: 0px;
   padding: 0px;
   background-color: var(--baground);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+  color: var(--logo-footer);
 }
 .frame-newsletter::placeholder {
   font-family: var(--main-font);
