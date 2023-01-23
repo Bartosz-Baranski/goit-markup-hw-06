@@ -805,6 +805,13 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  padding-left: 42px;
+}
+.icon-modal {
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  fill: var(--main-text);
 }
 .text-modal {
   border: 1px solid rgba(33, 33, 33, 0.2);
