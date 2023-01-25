@@ -817,17 +817,18 @@ ul {
   padding: 0px 0px 0px 42px;
   /* position: relative; */
 }
-
-.input-modal:focus > svg,
+/* .input-modal:focus .icon-modal, */
 .input-modal:focus-within {
   fill: var(--link-focus);
   max-width: 448px;
   max-height: 40px;
   padding: 0px 0px 0px 42px;
   border: 5px solid var(--link-focus);
-  position: relative;
+  /* position: relative; */
 }
-
+/* .input-modal:focus .icon-modal {
+  fill: var(--link-focus);
+} */
 .icon-modal {
   position: absolute;
   top: 28px;
@@ -858,23 +859,23 @@ ul {
   padding-left: 10px;
   padding-top: 14px;
 }
-.text-modal:placeholder-shown:focus {
+/* .text-modal:placeholder-shown:focus {
   border: 4px solid var(--link-focus);
   border-radius: 4px;
-}
-/* .text-modal:focus {
+} */
+.text-modal:focus {
   border-width: 5px;
   border-style: solid;
   border-color: var(--link-focus);
   border-radius: 4px;
-} */
+}
 
-textarea:not(:placeholder-shown):focus {
+/* textarea:not(:placeholder-shown):focus {
   border-width: 4px;
   border-style: solid;
   border-color: var(--link-focus);
   border-radius: 4px;
-}
+} */
 .check-div {
   margin: 20px 0px 0px 0px;
 }
