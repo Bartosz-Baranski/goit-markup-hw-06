@@ -824,6 +824,7 @@ ul {
   max-height: 40px;
   padding: 0px 0px 0px 42px;
   border: 5px solid var(--link-focus);
+  transition: var(--transition-active);
   /* position: relative; */
 }
 /* .input-modal:focus .icon-modal {
@@ -868,6 +869,7 @@ ul {
   border-style: solid;
   border-color: var(--link-focus);
   border-radius: 4px;
+  transition: var(--transition-active);
 }
 
 /* textarea:not(:placeholder-shown):focus {
