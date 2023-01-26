@@ -822,7 +822,7 @@ ul {
   padding: 0px 0px 0px 42px;
   outline: none;
 }
-.input-modal:focus {
+/* .input-modal:focus {
   max-width: 448px;
   max-height: 40px;
   padding: 0px 0px 0px 42px;
@@ -830,6 +830,11 @@ ul {
   transition: var(--transition-active);
   fill: var(--link-focus);
   outline: none;
+} */
+.input-icon-focus:focus-within > input,
+.input-icon-focus:focus-within > svg {
+  border-color: var(--link-focus);
+  fill: var(--link-focus);
 }
 .icon-modal {
   position: absolute;
