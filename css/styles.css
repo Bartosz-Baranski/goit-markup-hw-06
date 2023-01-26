@@ -734,6 +734,7 @@ ul {
   line-height: 1.25;
   padding-left: 16px;
   color: var(--logo-footer);
+  outline: none;
 }
 .frame-newsletter::placeholder {
   font-family: var(--main-font);
@@ -795,60 +796,62 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  position: relative;
+}
+.modal-forms:focus{
+  
 }
 .label-modal {
   display: flex;
+  flex-direction: column;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.172;
   color: var(--signatures);
   position: relative;
+  gap: 2px;
 }
 .input-modal {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
-  max-width: 448px;
+  width: 406px;
   height: 40px;
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   padding: 0px 0px 0px 42px;
-  /* position: relative; */
 }
-/* .input-modal:focus .icon-modal, */
-.input-modal:focus-within {
-  fill: var(--link-focus);
+.input-modal:focus {
   max-width: 448px;
   max-height: 40px;
   padding: 0px 0px 0px 42px;
-  border: 5px solid var(--link-focus);
+  outline: 1px solid var(--link-focus);
   transition: var(--transition-active);
-  /* position: relative; */
-}
-/* .input-modal:focus .icon-modal {
   fill: var(--link-focus);
-} */
+}
 .icon-modal {
   position: absolute;
-  top: 28px;
+  top: 30px;
   left: 12px;
   fill: var(--main-text);
-  z-index: 1;
+}
+.icon-modal:hover,
+.icon-modal:focus {
+  fill: var(--link-focus);
 }
 
 .text-modal {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
-  max-width: 448px;
-  max-height: 120px;
+  width: 448px;
+  height: 120px;
   resize: none;
   font-family: var(--main-font);
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  /* position: relative; */
   padding: 0px;
 }
 .text-modal::placeholder {
@@ -860,24 +863,12 @@ ul {
   padding-left: 10px;
   padding-top: 14px;
 }
-/* .text-modal:placeholder-shown:focus {
-  border: 4px solid var(--link-focus);
-  border-radius: 4px;
-} */
+
 .text-modal:focus {
-  border-width: 5px;
-  border-style: solid;
-  border-color: var(--link-focus);
-  border-radius: 4px;
+  outline: 1px solid var(--link-focus);
   transition: var(--transition-active);
 }
 
-/* textarea:not(:placeholder-shown):focus {
-  border-width: 4px;
-  border-style: solid;
-  border-color: var(--link-focus);
-  border-radius: 4px;
-} */
 .check-div {
   margin: 20px 0px 0px 0px;
 }
