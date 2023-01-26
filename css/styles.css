@@ -798,9 +798,11 @@ ul {
   gap: 2px;
   position: relative;
 }
-.modal-forms:focus{
-  
-}
+/* .modal-forms:focus .input-modal,
+.modal-forms:focus .icon-modal {
+  fill: var(--link-focus);
+  outline: 1px solid var(--link-focus);
+} */
 .label-modal {
   display: flex;
   flex-direction: column;
@@ -852,7 +854,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  padding: 0px;
+  padding: 10px;
 }
 .text-modal::placeholder {
   font-family: var(--main-font);
@@ -860,8 +862,7 @@ ul {
   font-size: 12px;
   line-height: 1.172;
   color: var(--contact-footer);
-  padding-left: 10px;
-  padding-top: 14px;
+  padding: 0px;
 }
 
 .text-modal:focus {
