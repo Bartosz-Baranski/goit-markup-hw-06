@@ -820,14 +820,16 @@ ul {
   font-size: 16px;
   line-height: 1.25;
   padding: 0px 0px 0px 42px;
+  outline: none;
 }
 .input-modal:focus {
   max-width: 448px;
   max-height: 40px;
   padding: 0px 0px 0px 42px;
-  outline: 1px solid var(--link-focus);
+  border: 1px solid var(--link-focus);
   transition: var(--transition-active);
   fill: var(--link-focus);
+  outline: none;
 }
 .icon-modal {
   position: absolute;
@@ -843,6 +845,7 @@ ul {
 .text-modal {
   border: 1px solid var(--border-form-modal);
   border-radius: 4px;
+  outline: none;
   width: 416px;
   height: 96px;
   resize: none;
@@ -861,8 +864,9 @@ ul {
 }
 
 .text-modal:focus {
-  outline: 1px solid var(--link-focus);
+  border: 1px solid var(--link-focus);
   transition: var(--transition-active);
+  outline: none;
 }
 
 .check-div {
