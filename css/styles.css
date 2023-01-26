@@ -822,19 +822,12 @@ ul {
   padding: 0px 0px 0px 42px;
   outline: none;
 }
-/* .input-modal:focus {
-  max-width: 448px;
-  max-height: 40px;
-  padding: 0px 0px 0px 42px;
-  border: 1px solid var(--link-focus);
-  transition: var(--transition-active);
-  fill: var(--link-focus);
-  outline: none;
-} */
+
 .input-icon-focus:focus-within > input,
 .input-icon-focus:focus-within > svg {
   border-color: var(--link-focus);
   fill: var(--link-focus);
+  transition: var(--transition-active);
 }
 .icon-modal {
   position: absolute;
@@ -871,7 +864,6 @@ ul {
 .text-modal:focus {
   border: 1px solid var(--link-focus);
   transition: var(--transition-active);
-  outline: none;
 }
 
 .check-div {
