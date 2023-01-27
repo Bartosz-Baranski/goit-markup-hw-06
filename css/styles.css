@@ -8,11 +8,11 @@
   --buttons-background: #f5f4fa;
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
-  --logo-black: #000000;
-  --border-select-product: #eeeeee;
-  --navi-border: #ececec;
+  --logo-black: rgb(0, 0, 0);
+  --border-select-product: rgb(238, 238, 238);
+  --navi-border: rgb(236, 236, 236);
   --border-icon-client: rgba(175, 177, 184, 1);
-  --icon-client: #afb1b8;
+  --icon-client: rgb(175, 177, 184);
   --gradient-motto: rgba(47, 48, 58, 0.4);
   --shadow-first-btn-selection: rgba(0, 0, 0, 0.12);
   --shadow-second-btn-selection: rgba(0, 0, 0, 0.08);
@@ -766,6 +766,7 @@ ul {
 }
 .btn-newsletter:hover {
   cursor: pointer;
+  transition: var(--transition-active);
 }
 .modal-form {
   display: flex;
@@ -918,4 +919,10 @@ ul {
   line-height: 1.87;
   font-weight: 700;
   color: var(--logo-footer);
+  box-shadow: 0 4px 4px var(--shadow-teamat);
+}
+.btn-modal-form:hover,
+.btn-modal-form:focus {
+  transition: var(--transition-active);
+  cursor: pointer;
 }
