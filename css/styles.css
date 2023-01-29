@@ -763,10 +763,13 @@ ul {
 }
 .icon-newsletter {
   fill: var(--logo-footer);
+  transition: transform var(--transition-active);
 }
 .btn-newsletter:hover {
   cursor: pointer;
-  transition: var(--transition-active);
+}
+.btn-newsletter:hover .icon-newsletter {
+  transform: rotate(360deg);
 }
 .modal-form {
   display: flex;
@@ -925,4 +928,5 @@ ul {
 .btn-modal-form:focus {
   transition: var(--transition-active);
   cursor: pointer;
+  box-shadow: 8px 8px 6px greenyellow;
 }
